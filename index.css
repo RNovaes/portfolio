@@ -5,7 +5,45 @@ body{
 #MeusDados{
     margin-top: 10%;
     background-color: white;
-    height: 200px;
+    height: 240px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+
+#box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#habilidades{
+    margin-top: 5%;
+    background-color: white;
+    height: 150px;
+    width: 45%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#academico{
+    margin-top: 5%;
+    background-color: white;
+    height: 150px;
+    width: 45%;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -21,7 +59,6 @@ body{
     height: 150px;
     border: solid 1px;
     border-radius: 50%;
-    margin-left: 3%;
     border-color: gray;
 }
 
@@ -37,15 +74,63 @@ body{
     flex-direction: column;
 }
 
+#MeusDados .novocontato{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
 #MeusDados .redes{
     display: flex;
 }
 
-#MeusDados .Fonte{
+.fonte{
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#MeusDados .logo{
+.logo{
     width: 30px;
     height: 30px;
+    margin-right: 10px;
+}
+
+.textoPessoal{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.habil{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.butoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.butt{
+    background-color: #0d6efd;
+    border-radius: 5px;
+    width: 90px;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+span{
+    color: white;
+}
+
+.dadosAcademicos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formacao{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
