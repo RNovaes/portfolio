@@ -1,16 +1,18 @@
 body {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    height: 100%;
-}
-
-.back {
     background-image: url('imagens/backPortfolio.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
+    height: 100vh; */
+    
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/backPortfolio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #MeusDados {
@@ -189,24 +191,17 @@ body {
     align-items: center;
 }
 
+@media only screen and (max-width: 480px) {
 
-@media (max-width: 800px) {
-
-    body{
-        background-color: black;
-    }
-
-    .back {
-        background-image: none;
-    }
+    /* Estilos específicos para celulares */
 
     #MeusDados {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: center;
         align-items: center;
-        height: 110%;
+        height: 100%;
+        justify-content: space-around;
     }
 
     .photo {
@@ -215,8 +210,10 @@ body {
 
     .dados {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 50%;
     }
 
     .textoDados {
@@ -236,12 +233,11 @@ body {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
     }
 
-    .dadosAcademicos{
+    .dadosAcademicos {
         margin-bottom: 5%;
+        margin-top: 5%;
     }
 
     .formacao {
@@ -262,18 +258,206 @@ body {
         justify-content: flex-start;
     }
 
-    #Projetos{
-        height: 100%;
+    #Projetos {
+        height: 60%;
+    }
+
+    .fonteProjetos {
         margin-top: 5%;
     }
 
     .projetos {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* Estilos específicos para tablets */
+
+    #MeusDados {
+        display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .photo {
+        margin-top: 5%;
+    }
+
+    .dados {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 50%;
+    }
+
+    .textoNome{
+        margin-top: 5%;
+    }
+
+    .textoDados {
+        margin-top: 5%;
+        font-size: 17px;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+
+    #Academico {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .dadosAcademicos {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .formacao {
+        font-size: 17px;
+    }
+
+    .dadosHabilidades {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .butoes {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #Projetos {
+        height: 60%;
+    }
+
+    .fonteProjetos {
+        margin-top: 5%;
+    }
+
+    .projetos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         margin-top: 5%;
     }
 
 }
 
-@media (max-width: 600px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Estilos específicos para notebooks */
+    
+    #MeusDados {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .photo {
+        margin-top: 5%;
+    }
+
+    .dados {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 50%;
+    }
+
+    .textoNome{
+        margin-top: 5%;
+    }
+
+    .textoDados {
+        margin-top: 5%;
+        font-size: 17px;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+
+    #Academico {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .dadosAcademicos {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .formacao {
+        font-size: 17px;
+    }
+
+    .dadosHabilidades {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .butoes {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #Projetos {
+        height: 60%;
+    }
+
+    .fonteProjetos {
+        margin-top: 5%;
+    }
+
+    .projetos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 5%;
+    }
+}
+
+/* Telas muito grandes (monitores maiores) */
+@media only screen and (min-width: 1025px) {
+
+    /* Estilos específicos para monitores maiores */
+
+}
